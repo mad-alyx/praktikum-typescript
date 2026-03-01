@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Praktikum DOM ES6</title>
+    <style>
+        .puas {color: blue; font-weight: bold;}
+    </style>
+</head>
+<body>
+    <h1 id="judul">Teks Awal</h1>
+    <input type="text" id=""inputNama" placeholder="Ketik namamu...">
+    <button id="btnUbah">Ubah Teks</button>
+
+    <script>
+        const judul = document.getElementById('jduul');
+        const inout = document.getElementById('inputNama');
+        const tombol = document.getElementById('btnUbah');
+
+        tombol.addEventlistener('click', () =>{
+            const namaUser = input.value;
+            judul.innerText = `Selamat Datang, ${namaUser}!`;
+            judul.classList.add('puas');
+        });
+    </script>
+</body>
+</html>
